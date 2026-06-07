@@ -1,0 +1,20 @@
+#Slide 22｜L1 與 L2 對誤差的反應不同
+
+假設某一維誤差是 10。
+
+在 L1 中：
+
+∣10∣=10
+
+在 squared L2 中：
+
+10
+2
+=100
+
+所以：
+
+L2 對大誤差更敏感
+L1 對 outlier 較不敏感
+L2 常用於 least squares
+L1 常用於 robust regression 或 sparse model

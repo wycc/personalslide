@@ -1,0 +1,13 @@
+#Slide 65｜Learning Rate 的影響
+
+Learning rate 太小：
+
+每次更新很少
+收斂很慢
+
+Learning rate 太大：
+
+可能越過最低點
+loss 震盪甚至發散
+
+Learning rate 是機器學習與深度學習中非常重要的超參數。

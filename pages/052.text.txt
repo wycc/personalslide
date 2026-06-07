@@ -1,0 +1,28 @@
+#Slide 51｜用投影理解 Linear Regression
+
+真實答案：
+
+y
+
+模型可產生的預測：
+
+Xw
+
+所有 Xw 形成欄空間。
+
+如果 y 不在欄空間中，linear regression 找的是：
+
+y
+^
+	​
+
+=Xw
+
+使得 
+y
+^
+	​
+
+ 最接近 y。
+
+所以 linear regression 就是把 y 投影到 X 的欄空間。

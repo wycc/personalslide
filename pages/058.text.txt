@@ -1,0 +1,20 @@
+#Slide 57｜為什麼 Linear Regression 使用平方誤差？
+
+平方誤差的好處：
+
+誤差不會正負抵消
+大誤差受到更強懲罰
+數學上容易微分
+可以導出 normal equation
+可以用 gradient descent 最佳化
+
+Linear regression 的目標：
+
+w
+min
+	​
+
+∣∣Xw−y∣∣
+2
+2
+	​

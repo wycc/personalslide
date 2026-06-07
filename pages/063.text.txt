@@ -1,0 +1,16 @@
+#Slide 62｜Gradient Descent 的直覺
+
+想像 loss 是一座山。
+
+我們想走到山谷最低點。
+
+梯度指出函數上升最快方向。
+
+所以我們往梯度的反方向走：
+
+w←w−η∇L(w)
+
+其中：
+
+η：learning rate
+∇L(w)：loss 對參數的梯度

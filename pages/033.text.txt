@@ -1,0 +1,29 @@
+#Slide 32｜Mahalanobis Distance：考慮特徵相關性
+
+Euclidean distance 假設：
+
+每個特徵尺度相同
+特徵之間彼此獨立
+
+但實際資料常有相關性：
+
+身高與體重相關
+坪數與總價相關
+影像中相鄰像素相關
+
+Mahalanobis distance：
+
+d
+M
+	​
+
+(x,y)=
+(x−y)
+T
+S
+−1
+(x−y)
+	​
+
+
+其中 S 是 covariance matrix。

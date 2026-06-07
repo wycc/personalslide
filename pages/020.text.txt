@@ -1,0 +1,53 @@
+#Slide 19｜Squared Euclidean Distance
+
+有時候會省略開根號：
+
+d
+2
+2
+	​
+
+(x,y)=∣∣x−y∣∣
+2
+2
+	​
+
+=(x
+1
+	​
+
+−y
+1
+	​
+
+)
+2
++(x
+2
+	​
+
+−y
+2
+	​
+
+)
+2
++⋯+(x
+n
+	​
+
+−y
+n
+	​
+
+)
+2
+
+這在 linear regression 中非常重要。
+
+因為 least squares loss 就是：
+
+L(w)=∣∣Xw−y∣∣
+2
+2
+	​

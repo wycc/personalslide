@@ -1,0 +1,40 @@
+#Slide 34｜距離度量總整理
+
+距離	公式	重點	常見用途
+L1 / Manhattan	(\sum	x_i-y_i	)
+L2 / Euclidean	
+∑(x
+i
+	​
+
+−y
+i
+	​
+
+)
+2
+	​
+
+	直線距離	KNN、K-means
+Squared L2	∑(x
+i
+	​
+
+−y
+i
+	​
+
+)
+2
+	放大大誤差	Linear regression
+L∞ / Chebyshev	(\max	x_i-y_i	)
+Cosine distance	(1-\frac{x^Ty}{		x
+Mahalanobis	
+(x−y)
+T
+S
+−1
+(x−y)
+	​
+
+	考慮共變異	異常偵測

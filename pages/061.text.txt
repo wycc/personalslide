@@ -1,0 +1,30 @@
+#Slide 60｜Normal Equation
+
+X
+T
+Xw=X
+T
+y
+
+如果 X
+T
+X 可逆：
+
+w=(X
+T
+X)
+−1
+X
+T
+y
+
+這是 linear regression 的解析解。
+
+但實務上不一定總是用它，因為：
+
+資料量很大時成本高
+特徵很多時反矩陣計算昂貴
+X
+T
+X 可能不可逆
+數值上可能不穩定

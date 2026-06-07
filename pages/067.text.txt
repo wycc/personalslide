@@ -1,0 +1,16 @@
+#Slide 66｜Batch GD、SGD、Mini-batch GD
+
+Batch Gradient Descent：
+
+每次使用全部資料
+穩定但慢
+
+Stochastic Gradient Descent：
+
+每次使用一筆資料
+快但震盪大
+
+Mini-batch Gradient Descent：
+
+每次使用一小批資料
+深度學習最常用

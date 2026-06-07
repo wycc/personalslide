@@ -1,0 +1,39 @@
+#Slide 20｜Manhattan Distance：L1 距離
+
+Manhattan distance 也稱為 L1 distance。
+
+d
+1
+	​
+
+(x,y)=∣∣x−y∣∣
+1
+	​
+
+=∣x
+1
+	​
+
+−y
+1
+	​
+
+∣+∣x
+2
+	​
+
+−y
+2
+	​
+
+∣+⋯+∣x
+n
+	​
+
+−y
+n
+	​
+
+∣
+
+它像是在城市街道中移動，只能水平或垂直走。

@@ -1,0 +1,10 @@
+#Slide 35｜距離在機器學習方法中的角色
+
+ML 方法	距離的角色
+KNN	找最近的鄰居
+K-means	找最近的群中心
+Linear regression	最小化預測與答案的 L2 距離
+PCA	找投影後重建誤差最小的子空間
+SVM	最大化分類邊界距離
+Embedding search	找語意向量最接近的資料
+Anomaly detection	找離正常資料分布很遠的點

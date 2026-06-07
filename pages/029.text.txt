@@ -1,0 +1,42 @@
+#Slide 28｜Cosine Distance
+
+Cosine similarity 越大代表越相似。
+
+可以定義 cosine distance：
+
+d
+cos
+	​
+
+(x,y)=1−
+∣∣x∣∣
+2
+	​
+
+∣∣y∣∣
+2
+	​
+
+x
+T
+y
+	​
+
+
+如果兩個向量方向相同：
+
+cos(θ)=1
+d
+cos
+	​
+
+=0
+
+如果兩個向量正交：
+
+cos(θ)=0
+d
+cos
+	​
+
+=1

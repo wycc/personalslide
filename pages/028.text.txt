@@ -1,0 +1,18 @@
+#Slide 27｜Cosine Similarity 在 ML 的用途
+
+Cosine similarity 常用於：
+
+文字向量比較
+文件相似度
+embedding 相似度
+推薦系統
+語意搜尋
+圖像特徵向量比對
+
+例子：
+
+文章 A 很長
+文章 B 很短
+但主題很像
+
+這時候 cosine similarity 比 Euclidean distance 更適合，因為它更重視方向。

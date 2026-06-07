@@ -1,0 +1,14 @@
+#Slide 70｜SVD 是什麼？
+
+Singular Value Decomposition：
+
+X=UΣV
+T
+
+其中：
+
+U：輸出空間的正交方向
+Σ：奇異值，代表每個方向的重要性
+V：輸入空間的正交方向
+
+SVD 可以幫助我們理解資料矩陣的結構。

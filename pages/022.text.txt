@@ -1,0 +1,33 @@
+#Slide 21｜Manhattan Distance 小例子
+
+假設：
+
+x=[80,90]
+y=[70,85]
+
+差向量：
+
+x−y=[10,5]
+
+Manhattan distance：
+
+d
+1
+	​
+
+(x,y)=∣10∣+∣5∣=15
+
+Euclidean distance：
+
+d
+2
+	​
+
+(x,y)=
+10
+2
++5
+2
+	​
+
+≈11.18

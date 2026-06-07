@@ -1,0 +1,13 @@
+#Slide 18｜Euclidean Distance 在 ML 的用途
+
+Euclidean distance 常用於：
+
+KNN：找最近的鄰居
+K-means：找最近的群中心
+影像特徵比對
+異常偵測
+向量空間中的相似度估計
+
+KNN 的基本精神：
+
+新資料的類別=距離最近的k個鄰居的多數類別

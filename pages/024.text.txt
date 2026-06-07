@@ -1,0 +1,77 @@
+#Slide 23｜Minkowski Distance：L1 和 L2 的一般化
+
+Minkowski distance：
+
+d
+p
+	​
+
+(x,y)=(
+i=1
+∑
+n
+	​
+
+∣x
+i
+	​
+
+−y
+i
+	​
+
+∣
+p
+)
+1/p
+
+當 p=1：
+
+d
+1
+	​
+
+(x,y)=
+i=1
+∑
+n
+	​
+
+∣x
+i
+	​
+
+−y
+i
+	​
+
+∣
+
+就是 Manhattan distance。
+
+當 p=2：
+
+d
+2
+	​
+
+(x,y)=
+i=1
+∑
+n
+	​
+
+(x
+i
+	​
+
+−y
+i
+	​
+
+)
+2
+	​
+
+
+就是 Euclidean distance。

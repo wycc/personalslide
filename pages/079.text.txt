@@ -1,0 +1,8 @@
+#Slide 78｜PCA 與 Linear Regression 比較
+
+主題	Linear Regression	PCA
+目標	預測 y	壓縮/理解 X
+是否有標籤	有 y	無 y
+幾何意義	將 y 投影到 X 的欄空間	將資料投影到主要變異子空間
+類型	監督式學習	非監督式學習
+誤差	預測誤差	重建誤差

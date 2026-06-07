@@ -1,0 +1,9 @@
+#Slide 1｜課程主題：機器學習中的線性代數基礎
+
+本單元目標：
+理解真實世界資料如何變成可計算的向量
+理解向量距離、內積與相似度
+理解線性空間、子空間與正交空間
+從 data fitting 連到 linear regression
+說明如何用 gradient descent 求 linear regression 的解
+說明 SVD/PCA 如何用於資料分析與降維

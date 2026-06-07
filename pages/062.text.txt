@@ -1,0 +1,9 @@
+#Slide 61｜為什麼還需要 Gradient Descent？
+
+Normal equation 是一次算出答案。
+
+Gradient descent 是一步一步逼近答案。
+
+在深度學習中，幾乎都使用 gradient-based optimization。
+
+所以 linear regression 是學習 gradient descent 的最佳入門例子。

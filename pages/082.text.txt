@@ -1,0 +1,9 @@
+#Slide 81｜課程總結
+
+機器學習的第一步，是把真實世界資料轉成向量
+向量化之後，就可以計算距離、相似度、方向與投影
+線性空間與子空間描述模型能表示的範圍
+正交與投影提供 linear regression 的幾何解釋
+Linear regression 可以用 least squares 形成最佳化問題
+Gradient descent 是從 loss 出發的通用求解方法
+SVD/PCA 幫助我們理解高維資料中的主要結構
