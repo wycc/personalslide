@@ -1,6 +1,6 @@
 {
   "id": "Y8N1bYxA0U",
-  "title": "1.從向量到模型的線性代數入門",
+  "title": "1-1.從向量到模型的線性代數入門",
   "original_filename": "pasted.txt",
   "status": "ready",
   "progress_step": null,
@@ -10,7 +10,7 @@
   "error_message": null,
   "user_prompt": "請以大學授課老師的親切口吻講解，偶爾穿插生活化的例子、打比方讓聽眾更容易理解；避免太多專有名詞堆砌，遇到術語請稍微解釋。\n\n【語氣提示詞】\n語氣自然、親切、節奏分明，重點前可稍作鋪陳，段落銜接流暢。",
   "created_at": "2026-05-16T18:20:11.568Z",
-  "updated_at": "2026-06-07T04:04:22.569Z",
+  "updated_at": "2026-06-07T13:15:57.435Z",
   "pages": [
     {
       "page_number": 1,
