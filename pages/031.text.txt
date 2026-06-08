@@ -1,0 +1,25 @@
+Slide 31: Collaborative Filtering 的限制
+投影片內容
+
+Google 教材指出幾個限制：
+
+Cold-start problem
+新使用者或新物品缺乏互動資料，難以建立 embedding。
+不容易整合 side features
+例如年齡、地區、電影類型、文字描述等。
+新物品如果訓練時沒出現，模型不能直接查詢它的 embedding。
+說明重點
+
+這一頁可以提醒學生：
+
+矩陣分解不是推薦系統的終點。
+
+現代推薦系統通常會結合：
+
+content-based features
+deep learning
+graph methods
+sequence models
+retrieval / ranking / re-ranking pipeline
+
+SVD 和 matrix factorization 是理解推薦系統的基礎，但不是全部。

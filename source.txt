@@ -1,0 +1,1822 @@
+Slide 01: 主題與學習目標
+投影片內容
+
+本單元主題：
+
+使用 SVD 建立電影推薦系統
+
+學習目標：
+
+了解 collaborative filtering 的基本想法。
+將電影推薦問題表示成 user-item matrix。
+理解 user embedding 與 movie embedding。
+使用向量內積計算推薦分數。
+了解 SVD 的數學意義。
+使用 truncated SVD 產生推薦結果。
+理解 SVD 在真實推薦系統中的限制。
+說明重點
+
+這份簡報的核心不是只介紹推薦系統，而是要讓學生看到線性代數如何真正出現在推薦系統中。
+
+推薦系統中的主要線性代數概念包括：
+
+矩陣
+向量
+內積
+低秩近似
+奇異值
+SVD
+最小平方誤差
+矩陣分解
+Slide 02: 推薦系統的基本問題
+投影片內容
+
+推薦系統想回答的問題：
+
+使用者還沒有看過哪些電影，但可能會喜歡？
+
+例如：
+
+使用者	已看過的電影
+User A	The Dark Knight Rises、Memento
+User B	The Dark Knight Rises、Memento、The Triplets of Belleville
+User C	Harry Potter、Shrek
+
+問題：
+
+User A 尚未看過 The Triplets of Belleville，是否應該推薦？
+
+說明重點
+
+推薦系統不是只推薦熱門電影，而是根據每個人的過去行為做個人化推薦。
+
+如果 User A 和 User B 的觀看紀錄很相似，而 User B 看過某部 User A 沒看過的電影，系統就可以推測 User A 也可能喜歡那部電影。
+
+Slide 03: Collaborative Filtering 的直覺
+投影片內容
+
+Collaborative Filtering 的核心想法：
+
+相似使用者可能喜歡相似的物品。
+被相似使用者喜歡的物品，也可能值得推薦。
+
+Google 教材指出，collaborative filtering 會同時利用 user 與 item 的相似性來做推薦，而且 embedding 可以由資料自動學習，不必完全依賴人工設計特徵。
+
+說明重點
+
+Collaborative filtering 和 content-based filtering 不同。
+
+Content-based filtering 比較像是：
+
+你喜歡這部動作片，所以推薦另一部動作片。
+
+Collaborative filtering 則比較像是：
+
+和你興趣相似的人喜歡這部電影，所以你也可能喜歡。
+
+這使得 collaborative filtering 有機會產生比較意外的推薦結果，也就是 serendipitous recommendation。
+
+Slide 04: Google 教材中的電影案例
+投影片內容
+
+Google 教材使用五部電影來說明 collaborative filtering：
+
+電影	特性
+The Dark Knight Rises	Batman 電影、PG-13、偏成人、商業大片
+Harry Potter and the Sorcerer's Stone	PG、兒童與家庭取向、商業大片
+Shrek	PG、兒童與家庭取向、商業大片
+The Triplets of Belleville	PG-13、較偏藝術片
+Memento	R、成人取向、較偏藝術片
+
+Google 教材先用 1D embedding 表示「兒童取向 ↔ 成人取向」，再用 2D embedding 加入「商業大片 ↔ 藝術片」這個維度。
+
+說明重點
+
+這個例子很適合用來教線性代數，因為它可以自然帶出：
+
+向量
+座標軸
+內積
+矩陣乘法
+SVD
+embedding space
+
+Google 的教材重點是：使用者和電影雖然是不同類型的物件，但可以放在同一個抽象 embedding space 中，用相似度或內積衡量匹配程度。
+
+Slide 05: User-Item Matrix
+投影片內容
+
+在推薦系統中，可以將使用者與電影的互動整理成矩陣：
+
+A∈R
+m×n
+
+其中：
+
+m：使用者數量
+n：電影數量
+A
+ij
+	​
+
+：使用者 i 對電影 j 的互動
+
+Google 教材中的 feedback matrix：
+
+每一列代表一位使用者。
+每一欄代表一部電影。
+值可以是 explicit feedback，例如評分。
+也可以是 implicit feedback，例如是否觀看過。
+說明重點
+
+在最簡化的情況下，我們可以使用 binary feedback：
+
+A
+ij
+	​
+
+=1
+
+代表使用者對電影有興趣，例如看過或喜歡。
+
+A
+ij
+	​
+
+=0
+
+代表目前沒有觀察到互動。
+
+不過要提醒學生：在真實系統中，0 不一定代表不喜歡，也可能只是還沒看過。
+
+Slide 06: 建立教學用電影互動矩陣
+投影片內容
+
+使用 Google 的五部電影建立一個教學用矩陣。
+
+電影順序：
+
+Dark Knight
+Harry Potter
+Shrek
+Triplets
+Memento
+
+假設互動矩陣為：
+
+A=
+	​
+
+1
+1
+0
+0
+	​
+
+0
+0
+1
+1
+	​
+
+0
+0
+1
+1
+	​
+
+0
+1
+0
+0
+	​
+
+1
+1
+0
+0
+	​
+
+	​
+
+
+對應表格：
+
+使用者 / 電影	Dark Knight	Harry Potter	Shrek	Triplets	Memento
+User 1	1	0	0	0	1
+User 2	1	0	0	1	1
+User 3	0	1	1	0	0
+User 4	0	1	1	0	0
+說明重點
+
+這個矩陣是為了教學而設計的簡化例子。
+
+它保留 Google 電影案例中的核心概念，但讓我們可以實際計算 SVD 與推薦分數。
+
+此時可以問學生：
+
+User 1 已經看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento，另外還看過 Triplets。
+那麼 User 1 是否也可能喜歡 Triplets？
+
+Slide 07: 推薦問題就是矩陣補值問題
+投影片內容
+
+User 1 的原始互動：
+
+[
+1
+	​
+
+0
+	​
+
+0
+	​
+
+0
+	​
+
+1
+	​
+
+]
+
+其中：
+
+Dark Knight 已觀看
+Memento 已觀看
+Harry Potter 未觀察
+Shrek 未觀察
+Triplets 未觀察
+
+推薦系統要做的事：
+
+A⟶
+A
+^
+
+也就是從已知互動估計未知互動。
+
+說明重點
+
+推薦系統可以被看成 matrix completion。
+
+我們並不是真的知道所有未知位置的答案，而是希望根據矩陣中的模式，推測哪些未知位置比較可能是高分。
+
+在這個例子中，我們想知道：
+
+A
+^
+1,Triplets
+	​
+
+
+是否夠高。
+
+Slide 08: 從人工特徵到 Embedding
+投影片內容
+
+Google 教材先用人工設計的二維特徵說明概念：
+
+v
+j
+	​
+
+=[
+x
+j
+	​
+
+y
+j
+	​
+
+	​
+
+]
+
+其中：
+
+x
+j
+	​
+
+：兒童取向 ↔ 成人取向
+y
+j
+	​
+
+：藝術片 ↔ 商業大片
+
+Google 教材說明，在 2D embedding 中，希望 user embedding 與 movie embedding 的 dot product：
+
+對使用者看過的電影接近 1
+對未看過的電影接近 0
+說明重點
+
+這是推薦系統和線性代數的第一個重要連結：
+
+使用者可以表示成向量。
+電影也可以表示成向量。
+推薦分數可以用內積計算。
+
+這些向量不一定要由人工設計。實務上，collaborative filtering 的優點就是可以從資料中自動學習 embedding。
+
+Slide 09: 教學用二維電影向量
+投影片內容
+
+為了示範內積計算，設定一組教學用二維 movie embedding：
+
+電影	向量
+Dark Knight	[
+0.7
+0.7
+	​
+
+]
+Harry Potter	[
+−0.5
+0.7
+	​
+
+]
+Shrek	[
+−0.8
+0.5
+	​
+
+]
+Triplets	[
+−0.2
+−0.8
+	​
+
+]
+Memento	[
+0.8
+−0.5
+	​
+
+]
+
+注意：
+
+這些數值是教學示意值，不是 Google 頁面提供的精確座標。
+
+說明重點
+
+第一個維度可以理解成：
+
+兒童取向⟷成人取向
+
+第二個維度可以理解成：
+
+藝術片⟷商業大片
+
+這樣學生可以先用熟悉的二維平面理解 embedding，再進入 SVD 自動學習 embedding 的部分。
+
+Slide 10: 教學用使用者向量
+投影片內容
+
+設定三位使用者的偏好向量：
+
+使用者	向量	偏好解釋
+User A	[
+0.8
+0.5
+	​
+
+]	偏成人、偏商業大片
+User B	[
+−0.7
+0.7
+	​
+
+]	偏家庭、偏商業大片
+User C	[
+0.7
+−0.7
+	​
+
+]	偏成人、偏藝術片
+
+推薦分數：
+
+A
+^
+ij
+	​
+
+=u
+i
+T
+	​
+
+v
+j
+	​
+
+說明重點
+
+內積越大，代表使用者與電影越匹配。
+
+這裡要強調：
+
+u
+i
+T
+	​
+
+v
+j
+	​
+
+=u
+i1
+	​
+
+v
+j1
+	​
+
++u
+i2
+	​
+
+v
+j2
+	​
+
+
+所以兩個向量在相同方向上的數值越一致，分數就越高。
+
+Slide 11: 實際計算 User A 的推薦分數
+投影片內容
+
+User A：
+
+u
+A
+	​
+
+=[
+0.8
+0.5
+	​
+
+]
+
+計算 Dark Knight：
+
+0.8×0.7+0.5×0.7=0.56+0.35=0.91
+
+計算 Harry Potter：
+
+0.8×(−0.5)+0.5×0.7=−0.40+0.35=−0.05
+
+計算 Shrek：
+
+0.8×(−0.8)+0.5×0.5=−0.64+0.25=−0.39
+
+計算 Triplets：
+
+0.8×(−0.2)+0.5×(−0.8)=−0.16−0.40=−0.56
+
+計算 Memento：
+
+0.8×0.8+0.5×(−0.5)=0.64−0.25=0.39
+說明重點
+
+排序結果：
+
+電影	分數
+Dark Knight	0.91
+Memento	0.39
+Harry Potter	-0.05
+Shrek	-0.39
+Triplets	-0.56
+
+如果 User A 已經看過 Dark Knight，則系統會排除它，下一個推薦候選是 Memento。
+
+Slide 12: 把所有內積寫成矩陣乘法
+投影片內容
+
+使用者矩陣：
+
+U=
+	​
+
+0.8
+−0.7
+0.7
+	​
+
+0.5
+0.7
+−0.7
+	​
+
+	​
+
+
+電影矩陣：
+
+V=
+	​
+
+0.7
+−0.5
+−0.8
+−0.2
+0.8
+	​
+
+0.7
+0.7
+0.5
+−0.8
+−0.5
+	​
+
+	​
+
+
+所有推薦分數：
+
+A
+^
+=UV
+T
+
+計算結果：
+
+A
+^
+=
+	​
+
+0.91
+0
+0
+	​
+
+−0.05
+0.84
+−0.84
+	​
+
+−0.39
+0.91
+−0.91
+	​
+
+−0.56
+−0.42
+0.42
+	​
+
+0.39
+−0.91
+0.91
+	​
+
+	​
+
+說明重點
+
+矩陣乘法中的每一個元素都是一個內積。
+
+例如：
+
+A
+^
+2,3
+	​
+
+=0.91
+
+代表 User B 對 Shrek 的推薦分數很高。
+
+這就是大規模推薦系統的重要技巧：
+
+不需要一個一個手算，矩陣乘法可以一次算出所有 user-item pair 的分數。
+
+Slide 13: 問題：這些向量從哪裡來？
+投影片內容
+
+剛才的 user embedding 和 movie embedding 是人工設定的。
+
+真實系統不會手動設定：
+
+v
+Memento
+	​
+
+=[
+0.8
+−0.5
+	​
+
+]
+
+真正的問題是：
+
+能否只根據 user-item matrix，自動學出 user embedding 與 movie embedding？
+
+這就是 matrix factorization：
+
+A≈UV
+T
+
+Google 教材指出，matrix factorization 會學習 user embedding matrix U 和 item embedding matrix V，使 UV
+T
+ 能近似 feedback matrix A。
+
+說明重點
+
+這裡是從「人工特徵」進入「機器學習」的關鍵。
+
+一開始我們用人工設計的維度來幫助理解：
+
+兒童或成人
+商業大片或藝術片
+
+但實際訓練時，模型可以自己找出 latent factors。
+
+這些 latent factors 不一定容易命名，但仍然可以幫助預測使用者偏好。
+
+Slide 14: SVD 的基本形式
+投影片內容
+
+Singular Value Decomposition：
+
+A=UΣV
+T
+
+其中：
+
+矩陣	意義
+U	左奇異向量
+Σ	奇異值對角矩陣
+V	右奇異向量
+
+並且：
+
+U
+T
+U=I
+V
+T
+V=I
+說明重點
+
+SVD 是線性代數中非常重要的矩陣分解。
+
+它可以將一個矩陣拆成三部分：
+
+V
+T
+：先轉到一組正交座標。
+Σ：沿著不同方向縮放。
+U：再轉到輸出空間。
+
+也就是：
+
+Ax=UΣV
+T
+x
+Slide 15: 奇異值代表什麼？
+投影片內容
+
+奇異值排列如下：
+
+σ
+1
+	​
+
+≥σ
+2
+	​
+
+≥⋯≥0
+
+每個奇異值代表一個方向的重要程度。
+
+SVD 可以寫成：
+
+A=σ
+1
+	​
+
+u
+1
+	​
+
+v
+1
+T
+	​
+
++σ
+2
+	​
+
+u
+2
+	​
+
+v
+2
+T
+	​
+
++⋯+σ
+r
+	​
+
+u
+r
+	​
+
+v
+r
+T
+	​
+
+
+每一項：
+
+σ
+i
+	​
+
+u
+i
+	​
+
+v
+i
+T
+	​
+
+
+都是一個 rank-1 matrix。
+
+說明重點
+
+可以把 SVD 想成：
+
+用一層一層簡單的模式，逐步重建原始矩陣。
+
+最大的奇異值對應最重要的模式。
+第二大的奇異值對應第二重要的模式。
+
+這和推薦系統中的 latent factors 很像。
+
+Slide 16: Truncated SVD
+投影片內容
+
+如果只保留前 k 個最大的奇異值：
+
+A
+k
+	​
+
+=U
+k
+	​
+
+Σ
+k
+	​
+
+V
+k
+T
+	​
+
+
+其中：
+
+k≪r
+
+這稱為 truncated SVD。
+
+說明重點
+
+Truncated SVD 是一種低秩近似。
+
+它的想法是：
+
+不需要完整保留所有細節，只保留最重要的幾個方向。
+
+在推薦系統中，這代表使用少數 latent factors 來近似大型 user-item matrix。
+
+Slide 17: 對教學矩陣做 SVD
+投影片內容
+
+教學用互動矩陣：
+
+A=
+	​
+
+1
+1
+0
+0
+	​
+
+0
+0
+1
+1
+	​
+
+0
+0
+1
+1
+	​
+
+0
+1
+0
+0
+	​
+
+1
+1
+0
+0
+	​
+
+	​
+
+
+對 A 做 SVD：
+
+A=UΣV
+T
+
+奇異值約為：
+
+σ
+1
+	​
+
+=2.136
+σ
+2
+	​
+
+=2.000
+σ
+3
+	​
+
+=0.662
+σ
+4
+	​
+
+≈0
+說明重點
+
+前兩個奇異值最大，因此我們先保留兩個主要方向：
+
+k=2
+
+這表示我們用二維 latent space 來近似這個 user-item matrix。
+
+Slide 18: 前兩個奇異向量
+投影片內容
+
+保留前兩個方向：
+
+U
+2
+	​
+
+≈
+	​
+
+0.615
+0.788
+0
+0
+	​
+
+0
+0
+0.707
+0.707
+	​
+
+	​
+
+Σ
+2
+	​
+
+≈[
+2.136
+0
+	​
+
+0
+2.000
+	​
+
+]
+V
+2
+T
+	​
+
+≈[
+0.657
+0
+	​
+
+0
+0.707
+	​
+
+0
+0.707
+	​
+
+0.369
+0
+	​
+
+0.657
+0
+	​
+
+]
+說明重點
+
+第一個 latent factor 主要連結：
+
+Dark Knight
+Triplets
+Memento
+
+第二個 latent factor 主要連結：
+
+Harry Potter
+Shrek
+
+這些關係不是人工指定，而是從使用者觀看行為中學到的。
+
+Slide 19: 使用 Truncated SVD 重建矩陣
+投影片內容
+
+計算：
+
+A
+2
+	​
+
+=U
+2
+	​
+
+Σ
+2
+	​
+
+V
+2
+T
+	​
+
+
+得到：
+
+A
+2
+	​
+
+≈
+	​
+
+0.864
+1.106
+0
+0
+	​
+
+0
+0
+1
+1
+	​
+
+0
+0
+1
+1
+	​
+
+0.485
+0.621
+0
+0
+	​
+
+0.864
+1.106
+0
+0
+	​
+
+	​
+
+說明重點
+
+重建矩陣中的每個值就是預測分數。
+
+User 1 原始資料：
+
+[
+1
+	​
+
+0
+	​
+
+0
+	​
+
+0
+	​
+
+1
+	​
+
+]
+
+SVD 重建後：
+
+[
+0.864
+	​
+
+0
+	​
+
+0
+	​
+
+0.485
+	​
+
+0.864
+	​
+
+]
+
+這表示 User 1 對 Triplets 的預測分數是：
+
+0.485
+Slide 20: 如何推薦電影給 User 1？
+投影片內容
+
+User 1 已觀看：
+
+電影	原始互動
+Dark Knight	1
+Memento	1
+
+排除已觀看電影後，候選電影分數：
+
+候選電影	預測分數
+Harry Potter	0
+Shrek	0
+Triplets	0.485
+
+因此推薦：
+
+The Triplets of Belleville
+	​
+
+說明重點
+
+SVD 推薦 Triplets 的原因是：
+
+User 1 看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento。
+User 2 還看過 Triplets。
+因此模型推測 User 1 也可能對 Triplets 有興趣。
+
+這就是 collaborative filtering 的精神。
+
+Slide 21: 從 SVD 轉成 Embedding 形式
+投影片內容
+
+令：
+
+P=U
+2
+	​
+
+Σ
+2
+1/2
+	​
+
+Q=V
+2
+	​
+
+Σ
+2
+1/2
+	​
+
+
+則：
+
+A
+2
+	​
+
+=PQ
+T
+
+使用者 embedding：
+
+P≈
+	​
+
+0.899
+1.152
+0
+0
+	​
+
+0
+0
+1.000
+1.000
+	​
+
+	​
+
+
+電影 embedding：
+
+Q≈
+	​
+
+0.960
+0
+0
+0.539
+0.960
+	​
+
+0
+1.000
+1.000
+0
+0
+	​
+
+	​
+
+說明重點
+
+這裡把 SVD 重新解釋成推薦系統常見的 embedding 形式。
+
+P：user embedding matrix
+Q：movie embedding matrix
+PQ
+T
+：預測分數矩陣
+
+Google 的 matrix factorization 教材也指出，UV
+T
+ 的 (i,j) 元素就是 user embedding 和 item embedding 的 dot product。
+
+Slide 22: 用 Embedding 內積重新計算 Triplets 分數
+投影片內容
+
+User 1 的 embedding：
+
+p
+1
+	​
+
+=[
+0.899
+0
+	​
+
+]
+
+Triplets 的 embedding：
+
+q
+Triplets
+	​
+
+=[
+0.539
+0
+	​
+
+]
+
+推薦分數：
+
+p
+1
+T
+	​
+
+q
+Triplets
+	​
+
+=0.899×0.539+0×0
+≈0.485
+說明重點
+
+這個分數和重建矩陣中的數值一致。
+
+所以可以從兩個角度理解推薦：
+
+角度一：矩陣重建
+A
+2
+	​
+
+=U
+2
+	​
+
+Σ
+2
+	​
+
+V
+2
+T
+	​
+
+角度二：向量內積
+A
+^
+ij
+	​
+
+=p
+i
+T
+	​
+
+q
+j
+	​
+
+
+這兩種說法本質上是同一件事。
+
+Slide 23: 為什麼 SVD 可以找到潛在結構？
+投影片內容
+
+原始矩陣中看得到的關係：
+
+使用者	Dark Knight	Triplets	Memento
+User 1	1	0	1
+User 2	1	1	1
+
+SVD 找出的潛在關係：
+
+Dark Knight∼Memento∼Triplets
+
+另一組關係：
+
+Harry Potter∼Shrek
+說明重點
+
+SVD 不知道電影劇情，也不知道電影類型。
+
+它只是從矩陣中發現：
+
+哪些使用者行為相似？
+哪些電影常被相似使用者觀看？
+哪些欄位之間存在共同模式？
+
+這就是從資料中學習 latent structure。
+
+Slide 24: SVD 與低秩假設
+投影片內容
+
+推薦系統背後的重要假設：
+
+巨大的 user-item matrix 雖然看起來高維，但主要偏好可能可以用少數 latent factors 描述。
+
+原始矩陣：
+
+A∈R
+m×n
+
+低秩近似：
+
+A≈PQ
+T
+
+其中：
+
+P∈R
+m×k
+Q∈R
+n×k
+k≪m,n
+說明重點
+
+這是線性代數在推薦系統中的核心價值。
+
+如果完整矩陣需要：
+
+mn
+
+個數值，矩陣分解後只需要：
+
+mk+nk
+
+個數值。
+
+當 k 很小時，可以大幅降低儲存與計算成本。
+
+Google 教材也指出，matrix factorization 通常比完整矩陣更精簡，因為 embedding 維度 d 通常遠小於 user 與 item 數量。
+
+Slide 25: SVD 對應的最佳化問題
+投影片內容
+
+如果把沒有互動的位置也當成 0，可以求解：
+
+U,V
+min
+	​
+
+	​
+
+A−UV
+T
+	​
+
+F
+2
+	​
+
+
+這個問題可以透過 SVD 求解。
+
+Google 教材也說明，將 unobserved values 視為 0 並最小化 Frobenius distance 時，可以透過 SVD 求解。
+
+說明重點
+
+這裡可以連到線性代數中的 norm：
+
+∥A−UV
+T
+∥
+F
+2
+	​
+
+
+代表重建矩陣和原始矩陣之間的平方誤差總和。
+
+SVD 的角色是：
+
+在固定 rank 的條件下，找出一個好的低秩近似。
+
+Slide 26: 直接使用 SVD 的限制
+投影片內容
+
+真實推薦系統中，矩陣通常極度稀疏。
+
+例如：
+
+YouTube 有大量影片。
+一位使用者只看過其中很小一部分。
+大部分位置都是未觀察值。
+
+問題：
+
+0
+
+=不喜歡
+
+0 可能代表：
+
+沒看過
+沒曝光
+沒注意到
+真的不喜歡
+
+Google 教材指出，在真實應用中，矩陣可能非常稀疏，直接使用 SVD 可能使 UV
+T
+ 接近零，導致泛化效果不佳。
+
+說明重點
+
+這一頁很重要，避免學生誤以為「SVD 就是完整的推薦系統解法」。
+
+比較精確的說法是：
+
+SVD 是理解推薦系統與矩陣分解的好入口，但真實系統通常需要更細緻地處理未觀察值。
+
+Slide 27: Weighted Matrix Factorization
+投影片內容
+
+Weighted Matrix Factorization 將 loss 分成兩部分：
+
+U,V
+min
+	​
+
+(i,j)∈obs
+∑
+	​
+
+(A
+ij
+	​
+
+−⟨U
+i
+	​
+
+,V
+j
+	​
+
+⟩)
+2
++w
+0
+	​
+
+(i,j)∈
+/
+obs
+∑
+	​
+
+⟨U
+i
+	​
+
+,V
+j
+	​
+
+⟩
+2
+
+其中：
+
+observed entries：已觀察到的互動
+unobserved entries：未觀察到的互動
+w
+0
+	​
+
+：控制未觀察值的權重
+
+Google 教材用這個形式說明 weighted matrix factorization，並指出 w
+0
+	​
+
+ 是重要的 hyperparameter。
+
+說明重點
+
+Weighted Matrix Factorization 的精神是：
+
+已觀察值比較可信，應該給較高權重。
+未觀察值可以當成弱訊號，但不能和明確互動同等看待。
+
+這比直接把所有未觀察值當成 0 更合理。
+
+Slide 28: WALS 與線性代數
+投影片內容
+
+WALS：Weighted Alternating Least Squares
+
+步驟：
+
+固定 user embedding U，求 item embedding V。
+固定 item embedding V，求 user embedding U。
+重複直到 loss 收斂。
+
+Google 教材指出，WALS 每個階段都可以透過解線性系統完成，而且每一步都會降低 loss。
+
+說明重點
+
+這裡可以連結到線性代數課程中的：
+
+least squares
+normal equation
+linear system
+iterative optimization
+
+原本同時求 U 和 V 很困難。
+
+但固定其中一個矩陣後，另一個矩陣的求解就變成最小平方法問題。
+
+Slide 29: 推薦系統中的線性代數總整理
+投影片內容
+線性代數概念	推薦系統中的意義
+Matrix	user-item interaction
+Row vector	使用者行為
+Column vector	電影被哪些人看過
+Dot product	推薦分數
+Rank	有效偏好維度
+Low-rank approximation	用少數因素描述偏好
+SVD	找出主要潛在方向
+Singular value	每個方向的重要性
+Frobenius norm	重建誤差
+Least squares	embedding 最佳化
+Linear system	WALS 更新步驟
+說明重點
+
+這一頁要讓學生看到：
+
+推薦系統不是一個遠離線性代數的應用，而是線性代數概念的完整集合。
+
+從資料表示到模型訓練，再到推論階段，都會用到矩陣與向量。
+
+Slide 30: Collaborative Filtering 的優點
+投影片內容
+
+Google 教材整理的優點包括：
+
+不需要大量 domain knowledge。
+embedding 可以自動學習。
+可以產生意外但有價值的推薦。
+只用 feedback matrix 就能作為推薦系統起點。
+可以作為 candidate generator 的其中一種方法。
+說明重點
+
+Collaborative filtering 的力量在於：
+
+它可以透過群體行為發現使用者自己也未必明確知道的興趣。
+
+例如使用者未必會說自己喜歡某類藝術片，但如果相似使用者都喜歡某部電影，系統仍可能推薦它。
+
+Slide 31: Collaborative Filtering 的限制
+投影片內容
+
+Google 教材指出幾個限制：
+
+Cold-start problem
+新使用者或新物品缺乏互動資料，難以建立 embedding。
+不容易整合 side features
+例如年齡、地區、電影類型、文字描述等。
+新物品如果訓練時沒出現，模型不能直接查詢它的 embedding。
+說明重點
+
+這一頁可以提醒學生：
+
+矩陣分解不是推薦系統的終點。
+
+現代推薦系統通常會結合：
+
+content-based features
+deep learning
+graph methods
+sequence models
+retrieval / ranking / re-ranking pipeline
+
+SVD 和 matrix factorization 是理解推薦系統的基礎，但不是全部。
+
+Slide 32: 課堂練習一：計算內積推薦分數
+投影片內容
+
+給定使用者向量：
+
+u=[
+0.8
+0.5
+	​
+
+]
+
+兩部電影：
+
+v
+1
+	​
+
+=[
+0.7
+0.7
+	​
+
+]
+v
+2
+	​
+
+=[
+0.8
+−0.5
+	​
+
+]
+
+問題：
+
+計算 u
+T
+v
+1
+	​
+
+。
+計算 u
+T
+v
+2
+	​
+
+。
+哪部電影應該優先推薦？
+說明重點
+
+計算：
+
+u
+T
+v
+1
+	​
+
+=0.8×0.7+0.5×0.7=0.91
+u
+T
+v
+2
+	​
+
+=0.8×0.8+0.5×(−0.5)=0.39
+
+所以優先推薦 v
+1
+	​
+
+。
+
+Slide 33: 課堂練習二：解讀 SVD 重建矩陣
+投影片內容
+
+給定 SVD 重建矩陣：
+
+A
+2
+	​
+
+≈
+	​
+
+0.864
+1.106
+0
+0
+	​
+
+0
+0
+1
+1
+	​
+
+0
+0
+1
+1
+	​
+
+0.485
+0.621
+0
+0
+	​
+
+0.864
+1.106
+0
+0
+	​
+
+	​
+
+
+User 1 已經看過第 1 與第 5 部電影。
+
+問題：
+
+應該推薦第 2、3、4 部電影中的哪一部？
+
+說明重點
+
+第 2 部分數：
+
+0
+
+第 3 部分數：
+
+0
+
+第 4 部分數：
+
+0.485
+
+所以推薦第 4 部：
+
+The Triplets of Belleville
+	​
+
+Slide 34: 課堂討論：0 到底代表什麼？
+投影片內容
+
+在推薦系統中：
+
+A
+ij
+	​
+
+=0
+
+可能代表：
+
+使用者不喜歡。
+使用者沒看過。
+電影沒有被推薦給他。
+使用者沒有注意到。
+系統沒有收集到資料。
+
+討論問題：
+
+如果把所有 0 都當成不喜歡，會發生什麼問題？
+
+說明重點
+
+這一頁讓學生理解資料建模的重要性。
+
+數學模型再漂亮，如果資料意義搞錯，結果也會偏差。
+
+這也是為什麼真實推薦系統需要 weighted loss、negative sampling 或其他方式處理 unobserved entries。
+
+Slide 35: 完整流程總結
+投影片內容
+使用者觀看紀錄
+↓
+User-Item Matrix
+↓
+SVD / Matrix Factorization
+↓
+User Embedding + Movie Embedding
+↓
+內積計算推薦分數
+↓
+排除已看過電影
+↓
+推薦 Top-K
+說明重點
+
+以 User 1 為例：
+
+User 1 看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento，且看過 Triplets。
+SVD 從矩陣中學到這個共同模式。
+重建矩陣給 User 1 的 Triplets 分數為 0.485。
+排除已看過電影後，推薦 Triplets。
+Slide 36: 最後總結
+投影片內容
+
+本單元三個核心觀念：
+
+推薦系統可以表示成矩陣問題。
+SVD 可以找出矩陣中的主要潛在方向。
+推薦分數可以透過 user embedding 與 item embedding 的內積計算。
+
+補充：
+
+SVD 是理解推薦系統的好入口；
+真實系統通常會使用 weighted matrix factorization、WALS 或更複雜的模型來處理稀疏資料。
+
+說明重點
+
+最後可以用一句話收尾：
+
+SVD 的價值不只是分解矩陣，而是讓我們用較低維的向量空間理解使用者與物品之間的隱藏關係。

@@ -1,0 +1,21 @@
+Slide 29: 推薦系統中的線性代數總整理
+投影片內容
+線性代數概念	推薦系統中的意義
+Matrix	user-item interaction
+Row vector	使用者行為
+Column vector	電影被哪些人看過
+Dot product	推薦分數
+Rank	有效偏好維度
+Low-rank approximation	用少數因素描述偏好
+SVD	找出主要潛在方向
+Singular value	每個方向的重要性
+Frobenius norm	重建誤差
+Least squares	embedding 最佳化
+Linear system	WALS 更新步驟
+說明重點
+
+這一頁要讓學生看到：
+
+推薦系統不是一個遠離線性代數的應用，而是線性代數概念的完整集合。
+
+從資料表示到模型訓練，再到推論階段，都會用到矩陣與向量。

@@ -1,0 +1,27 @@
+Slide 23: 為什麼 SVD 可以找到潛在結構？
+投影片內容
+
+原始矩陣中看得到的關係：
+
+使用者	Dark Knight	Triplets	Memento
+User 1	1	0	1
+User 2	1	1	1
+
+SVD 找出的潛在關係：
+
+Dark Knight∼Memento∼Triplets
+
+另一組關係：
+
+Harry Potter∼Shrek
+說明重點
+
+SVD 不知道電影劇情，也不知道電影類型。
+
+它只是從矩陣中發現：
+
+哪些使用者行為相似？
+哪些電影常被相似使用者觀看？
+哪些欄位之間存在共同模式？
+
+這就是從資料中學習 latent structure。

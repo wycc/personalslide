@@ -1,0 +1,24 @@
+Slide 35: 完整流程總結
+投影片內容
+使用者觀看紀錄
+↓
+User-Item Matrix
+↓
+SVD / Matrix Factorization
+↓
+User Embedding + Movie Embedding
+↓
+內積計算推薦分數
+↓
+排除已看過電影
+↓
+推薦 Top-K
+說明重點
+
+以 User 1 為例：
+
+User 1 看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento，且看過 Triplets。
+SVD 從矩陣中學到這個共同模式。
+重建矩陣給 User 1 的 Triplets 分數為 0.485。
+排除已看過電影後，推薦 Triplets。

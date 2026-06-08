@@ -1,0 +1,69 @@
+Slide 06: 建立教學用電影互動矩陣
+投影片內容
+
+使用 Google 的五部電影建立一個教學用矩陣。
+
+電影順序：
+
+Dark Knight
+Harry Potter
+Shrek
+Triplets
+Memento
+
+假設互動矩陣為：
+
+A=
+	​
+
+1
+1
+0
+0
+	​
+
+0
+0
+1
+1
+	​
+
+0
+0
+1
+1
+	​
+
+0
+1
+0
+0
+	​
+
+1
+1
+0
+0
+	​
+
+	​
+
+
+對應表格：
+
+使用者 / 電影	Dark Knight	Harry Potter	Shrek	Triplets	Memento
+User 1	1	0	0	0	1
+User 2	1	0	0	1	1
+User 3	0	1	1	0	0
+User 4	0	1	1	0	0
+說明重點
+
+這個矩陣是為了教學而設計的簡化例子。
+
+它保留 Google 電影案例中的核心概念，但讓我們可以實際計算 SVD 與推薦分數。
+
+此時可以問學生：
+
+User 1 已經看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento，另外還看過 Triplets。
+那麼 User 1 是否也可能喜歡 Triplets？

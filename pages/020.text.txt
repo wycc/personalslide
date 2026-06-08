@@ -1,0 +1,31 @@
+Slide 20: 如何推薦電影給 User 1？
+投影片內容
+
+User 1 已觀看：
+
+電影	原始互動
+Dark Knight	1
+Memento	1
+
+排除已觀看電影後，候選電影分數：
+
+候選電影	預測分數
+Harry Potter	0
+Shrek	0
+Triplets	0.485
+
+因此推薦：
+
+The Triplets of Belleville
+	​
+
+說明重點
+
+SVD 推薦 Triplets 的原因是：
+
+User 1 看過 Dark Knight 和 Memento。
+User 2 也看過 Dark Knight 和 Memento。
+User 2 還看過 Triplets。
+因此模型推測 User 1 也可能對 Triplets 有興趣。
+
+這就是 collaborative filtering 的精神。

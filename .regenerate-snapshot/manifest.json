@@ -1,0 +1,516 @@
+{
+  "snapshot_id": "IOLnyqeE6J",
+  "created_at": "2026-06-08T01:40:39.341Z",
+  "pdf_id": "BJP4VU_1kY",
+  "page_count": 36,
+  "asset_types": [
+    "script",
+    "audio"
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/001.jpg",
+      "db_script_path": "pages/001.script.txt",
+      "db_audio_path": "pages/001.m4a",
+      "db_audio_duration_seconds": 54.093625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 2,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/002.jpg",
+      "db_script_path": "pages/002.script.txt",
+      "db_audio_path": "pages/002.m4a",
+      "db_audio_duration_seconds": 56.173625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 3,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/003.jpg",
+      "db_script_path": "pages/003.script.txt",
+      "db_audio_path": "pages/003.m4a",
+      "db_audio_duration_seconds": 54.773625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 4,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/004.jpg",
+      "db_script_path": "pages/004.script.txt",
+      "db_audio_path": "pages/004.m4a",
+      "db_audio_duration_seconds": 62.053625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 5,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/005.jpg",
+      "db_script_path": "pages/005.script.txt",
+      "db_audio_path": "pages/005.m4a",
+      "db_audio_duration_seconds": 57.493625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 6,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/006.jpg",
+      "db_script_path": "pages/006.script.txt",
+      "db_audio_path": "pages/006.m4a",
+      "db_audio_duration_seconds": 48.373625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 7,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/007.jpg",
+      "db_script_path": "pages/007.script.txt",
+      "db_audio_path": "pages/007.m4a",
+      "db_audio_duration_seconds": 52.533625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 8,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/008.jpg",
+      "db_script_path": "pages/008.script.txt",
+      "db_audio_path": "pages/008.m4a",
+      "db_audio_duration_seconds": 60.373625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 9,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/009.jpg",
+      "db_script_path": "pages/009.script.txt",
+      "db_audio_path": "pages/009.m4a",
+      "db_audio_duration_seconds": 59.093625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 10,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/010.jpg",
+      "db_script_path": "pages/010.script.txt",
+      "db_audio_path": "pages/010.m4a",
+      "db_audio_duration_seconds": 59.373625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 11,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/011.jpg",
+      "db_script_path": "pages/011.script.txt",
+      "db_audio_path": "pages/011.m4a",
+      "db_audio_duration_seconds": 64.213625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 12,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/012.jpg",
+      "db_script_path": "pages/012.script.txt",
+      "db_audio_path": "pages/012.m4a",
+      "db_audio_duration_seconds": 55.333625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 13,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/013.jpg",
+      "db_script_path": "pages/013.script.txt",
+      "db_audio_path": "pages/013.m4a",
+      "db_audio_duration_seconds": 48.413625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 14,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/014.jpg",
+      "db_script_path": "pages/014.script.txt",
+      "db_audio_path": "pages/014.m4a",
+      "db_audio_duration_seconds": 52.693625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 15,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/015.jpg",
+      "db_script_path": "pages/015.script.txt",
+      "db_audio_path": "pages/015.m4a",
+      "db_audio_duration_seconds": 54.173625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 16,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/016.jpg",
+      "db_script_path": "pages/016.script.txt",
+      "db_audio_path": "pages/016.m4a",
+      "db_audio_duration_seconds": 56.653625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 17,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/017.jpg",
+      "db_script_path": "pages/017.script.txt",
+      "db_audio_path": "pages/017.m4a",
+      "db_audio_duration_seconds": 57.093625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 18,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/018.jpg",
+      "db_script_path": "pages/018.script.txt",
+      "db_audio_path": "pages/018.m4a",
+      "db_audio_duration_seconds": 47.893625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 19,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/019.jpg",
+      "db_script_path": "pages/019.script.txt",
+      "db_audio_path": "pages/019.m4a",
+      "db_audio_duration_seconds": 57.653625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 20,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/020.jpg",
+      "db_script_path": "pages/020.script.txt",
+      "db_audio_path": "pages/020.m4a",
+      "db_audio_duration_seconds": 52.533625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 21,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/021.jpg",
+      "db_script_path": "pages/021.script.txt",
+      "db_audio_path": "pages/021.m4a",
+      "db_audio_duration_seconds": 49.733625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 22,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/022.jpg",
+      "db_script_path": "pages/022.script.txt",
+      "db_audio_path": "pages/022.m4a",
+      "db_audio_duration_seconds": 63.013625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 23,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/023.jpg",
+      "db_script_path": "pages/023.script.txt",
+      "db_audio_path": "pages/023.m4a",
+      "db_audio_duration_seconds": 50.733625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 24,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/024.jpg",
+      "db_script_path": "pages/024.script.txt",
+      "db_audio_path": "pages/024.m4a",
+      "db_audio_duration_seconds": 52.333625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 25,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/025.jpg",
+      "db_script_path": "pages/025.script.txt",
+      "db_audio_path": "pages/025.m4a",
+      "db_audio_duration_seconds": 58.373625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 26,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/026.jpg",
+      "db_script_path": "pages/026.script.txt",
+      "db_audio_path": "pages/026.m4a",
+      "db_audio_duration_seconds": 54.813625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 27,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/027.jpg",
+      "db_script_path": "pages/027.script.txt",
+      "db_audio_path": "pages/027.m4a",
+      "db_audio_duration_seconds": 53.173625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 28,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/028.jpg",
+      "db_script_path": "pages/028.script.txt",
+      "db_audio_path": "pages/028.m4a",
+      "db_audio_duration_seconds": 53.213625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 29,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/029.jpg",
+      "db_script_path": "pages/029.script.txt",
+      "db_audio_path": "pages/029.m4a",
+      "db_audio_duration_seconds": 61.773625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 30,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/030.jpg",
+      "db_script_path": "pages/030.script.txt",
+      "db_audio_path": "pages/030.m4a",
+      "db_audio_duration_seconds": 53.213625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 31,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/031.jpg",
+      "db_script_path": "pages/031.script.txt",
+      "db_audio_path": "pages/031.m4a",
+      "db_audio_duration_seconds": 49.893625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 32,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/032.jpg",
+      "db_script_path": "pages/032.script.txt",
+      "db_audio_path": "pages/032.m4a",
+      "db_audio_duration_seconds": 55.293625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 33,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/033.jpg",
+      "db_script_path": "pages/033.script.txt",
+      "db_audio_path": "pages/033.m4a",
+      "db_audio_duration_seconds": 55.253625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 34,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/034.jpg",
+      "db_script_path": "pages/034.script.txt",
+      "db_audio_path": "pages/034.m4a",
+      "db_audio_duration_seconds": 50.893625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 35,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/035.jpg",
+      "db_script_path": "pages/035.script.txt",
+      "db_audio_path": "pages/035.m4a",
+      "db_audio_duration_seconds": 56.133625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    },
+    {
+      "page_number": 36,
+      "db_status": "audio_ready",
+      "db_image_path": "pages/036.jpg",
+      "db_script_path": "pages/036.script.txt",
+      "db_audio_path": "pages/036.m4a",
+      "db_audio_duration_seconds": 53.013625,
+      "script": {
+        "existed": true
+      },
+      "audio": {
+        "existed": true
+      }
+    }
+  ]
+}

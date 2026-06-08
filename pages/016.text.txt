@@ -1,0 +1,38 @@
+Slide 16: Truncated SVD
+投影片內容
+
+如果只保留前 k 個最大的奇異值：
+
+A
+k
+	​
+
+=U
+k
+	​
+
+Σ
+k
+	​
+
+V
+k
+T
+	​
+
+
+其中：
+
+k≪r
+
+這稱為 truncated SVD。
+
+說明重點
+
+Truncated SVD 是一種低秩近似。
+
+它的想法是：
+
+不需要完整保留所有細節，只保留最重要的幾個方向。
+
+在推薦系統中，這代表使用少數 latent factors 來近似大型 user-item matrix。

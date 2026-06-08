@@ -1,0 +1,23 @@
+Slide 02: 推薦系統的基本問題
+投影片內容
+
+推薦系統想回答的問題：
+
+使用者還沒有看過哪些電影，但可能會喜歡？
+
+例如：
+
+使用者	已看過的電影
+User A	The Dark Knight Rises、Memento
+User B	The Dark Knight Rises、Memento、The Triplets of Belleville
+User C	Harry Potter、Shrek
+
+問題：
+
+User A 尚未看過 The Triplets of Belleville，是否應該推薦？
+
+說明重點
+
+推薦系統不是只推薦熱門電影，而是根據每個人的過去行為做個人化推薦。
+
+如果 User A 和 User B 的觀看紀錄很相似，而 User B 看過某部 User A 沒看過的電影，系統就可以推測 User A 也可能喜歡那部電影。

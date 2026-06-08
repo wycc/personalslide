@@ -1,0 +1,87 @@
+Slide 21: 從 SVD 轉成 Embedding 形式
+投影片內容
+
+令：
+
+P=U
+2
+	​
+
+Σ
+2
+1/2
+	​
+
+Q=V
+2
+	​
+
+Σ
+2
+1/2
+	​
+
+
+則：
+
+A
+2
+	​
+
+=PQ
+T
+
+使用者 embedding：
+
+P≈
+	​
+
+0.899
+1.152
+0
+0
+	​
+
+0
+0
+1.000
+1.000
+	​
+
+	​
+
+
+電影 embedding：
+
+Q≈
+	​
+
+0.960
+0
+0
+0.539
+0.960
+	​
+
+0
+1.000
+1.000
+0
+0
+	​
+
+	​
+
+說明重點
+
+這裡把 SVD 重新解釋成推薦系統常見的 embedding 形式。
+
+P：user embedding matrix
+Q：movie embedding matrix
+PQ
+T
+：預測分數矩陣
+
+Google 的 matrix factorization 教材也指出，UV
+T
+ 的 (i,j) 元素就是 user embedding 和 item embedding 的 dot product。

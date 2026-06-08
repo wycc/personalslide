@@ -1,0 +1,17 @@
+Slide 30: Collaborative Filtering 的優點
+投影片內容
+
+Google 教材整理的優點包括：
+
+不需要大量 domain knowledge。
+embedding 可以自動學習。
+可以產生意外但有價值的推薦。
+只用 feedback matrix 就能作為推薦系統起點。
+可以作為 candidate generator 的其中一種方法。
+說明重點
+
+Collaborative filtering 的力量在於：
+
+它可以透過群體行為發現使用者自己也未必明確知道的興趣。
+
+例如使用者未必會說自己喜歡某類藝術片，但如果相似使用者都喜歡某部電影，系統仍可能推薦它。

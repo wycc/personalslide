@@ -1,0 +1,72 @@
+Slide 27: Weighted Matrix Factorization
+投影片內容
+
+Weighted Matrix Factorization 將 loss 分成兩部分：
+
+U,V
+min
+	​
+
+(i,j)∈obs
+∑
+	​
+
+(A
+ij
+	​
+
+−⟨U
+i
+	​
+
+,V
+j
+	​
+
+⟩)
+2
++w
+0
+	​
+
+(i,j)∈
+/
+obs
+∑
+	​
+
+⟨U
+i
+	​
+
+,V
+j
+	​
+
+⟩
+2
+
+其中：
+
+observed entries：已觀察到的互動
+unobserved entries：未觀察到的互動
+w
+0
+	​
+
+：控制未觀察值的權重
+
+Google 教材用這個形式說明 weighted matrix factorization，並指出 w
+0
+	​
+
+ 是重要的 hyperparameter。
+
+說明重點
+
+Weighted Matrix Factorization 的精神是：
+
+已觀察值比較可信，應該給較高權重。
+未觀察值可以當成弱訊號，但不能和明確互動同等看待。
+
+這比直接把所有未觀察值當成 0 更合理。

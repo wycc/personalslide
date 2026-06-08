@@ -1,0 +1,48 @@
+Slide 08: 從人工特徵到 Embedding
+投影片內容
+
+Google 教材先用人工設計的二維特徵說明概念：
+
+v
+j
+	​
+
+=[
+x
+j
+	​
+
+y
+j
+	​
+
+	​
+
+]
+
+其中：
+
+x
+j
+	​
+
+：兒童取向 ↔ 成人取向
+y
+j
+	​
+
+：藝術片 ↔ 商業大片
+
+Google 教材說明，在 2D embedding 中，希望 user embedding 與 movie embedding 的 dot product：
+
+對使用者看過的電影接近 1
+對未看過的電影接近 0
+說明重點
+
+這是推薦系統和線性代數的第一個重要連結：
+
+使用者可以表示成向量。
+電影也可以表示成向量。
+推薦分數可以用內積計算。
+
+這些向量不一定要由人工設計。實務上，collaborative filtering 的優點就是可以從資料中自動學習 embedding。

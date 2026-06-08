@@ -1,0 +1,41 @@
+Slide 24: SVD 與低秩假設
+投影片內容
+
+推薦系統背後的重要假設：
+
+巨大的 user-item matrix 雖然看起來高維，但主要偏好可能可以用少數 latent factors 描述。
+
+原始矩陣：
+
+A∈R
+m×n
+
+低秩近似：
+
+A≈PQ
+T
+
+其中：
+
+P∈R
+m×k
+Q∈R
+n×k
+k≪m,n
+說明重點
+
+這是線性代數在推薦系統中的核心價值。
+
+如果完整矩陣需要：
+
+mn
+
+個數值，矩陣分解後只需要：
+
+mk+nk
+
+個數值。
+
+當 k 很小時，可以大幅降低儲存與計算成本。
+
+Google 教材也指出，matrix factorization 通常比完整矩陣更精簡，因為 embedding 維度 d 通常遠小於 user 與 item 數量。

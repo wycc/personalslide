@@ -1,0 +1,26 @@
+Slide 04: Google 教材中的電影案例
+投影片內容
+
+Google 教材使用五部電影來說明 collaborative filtering：
+
+電影	特性
+The Dark Knight Rises	Batman 電影、PG-13、偏成人、商業大片
+Harry Potter and the Sorcerer's Stone	PG、兒童與家庭取向、商業大片
+Shrek	PG、兒童與家庭取向、商業大片
+The Triplets of Belleville	PG-13、較偏藝術片
+Memento	R、成人取向、較偏藝術片
+
+Google 教材先用 1D embedding 表示「兒童取向 ↔ 成人取向」，再用 2D embedding 加入「商業大片 ↔ 藝術片」這個維度。
+
+說明重點
+
+這個例子很適合用來教線性代數，因為它可以自然帶出：
+
+向量
+座標軸
+內積
+矩陣乘法
+SVD
+embedding space
+
+Google 的教材重點是：使用者和電影雖然是不同類型的物件，但可以放在同一個抽象 embedding space 中，用相似度或內積衡量匹配程度。

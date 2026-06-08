@@ -1,0 +1,43 @@
+Slide 13: 問題：這些向量從哪裡來？
+投影片內容
+
+剛才的 user embedding 和 movie embedding 是人工設定的。
+
+真實系統不會手動設定：
+
+v
+Memento
+	​
+
+=[
+0.8
+−0.5
+	​
+
+]
+
+真正的問題是：
+
+能否只根據 user-item matrix，自動學出 user embedding 與 movie embedding？
+
+這就是 matrix factorization：
+
+A≈UV
+T
+
+Google 教材指出，matrix factorization 會學習 user embedding matrix U 和 item embedding matrix V，使 UV
+T
+ 能近似 feedback matrix A。
+
+說明重點
+
+這裡是從「人工特徵」進入「機器學習」的關鍵。
+
+一開始我們用人工設計的維度來幫助理解：
+
+兒童或成人
+商業大片或藝術片
+
+但實際訓練時，模型可以自己找出 latent factors。
+
+這些 latent factors 不一定容易命名，但仍然可以幫助預測使用者偏好。

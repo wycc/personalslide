@@ -1,0 +1,23 @@
+Slide 03: Collaborative Filtering 的直覺
+投影片內容
+
+Collaborative Filtering 的核心想法：
+
+相似使用者可能喜歡相似的物品。
+被相似使用者喜歡的物品，也可能值得推薦。
+
+Google 教材指出，collaborative filtering 會同時利用 user 與 item 的相似性來做推薦，而且 embedding 可以由資料自動學習，不必完全依賴人工設計特徵。
+
+說明重點
+
+Collaborative filtering 和 content-based filtering 不同。
+
+Content-based filtering 比較像是：
+
+你喜歡這部動作片，所以推薦另一部動作片。
+
+Collaborative filtering 則比較像是：
+
+和你興趣相似的人喜歡這部電影，所以你也可能喜歡。
+
+這使得 collaborative filtering 有機會產生比較意外的推薦結果，也就是 serendipitous recommendation。

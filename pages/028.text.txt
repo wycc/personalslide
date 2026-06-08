@@ -1,0 +1,25 @@
+Slide 28: WALS 與線性代數
+投影片內容
+
+WALS：Weighted Alternating Least Squares
+
+步驟：
+
+固定 user embedding U，求 item embedding V。
+固定 item embedding V，求 user embedding U。
+重複直到 loss 收斂。
+
+Google 教材指出，WALS 每個階段都可以透過解線性系統完成，而且每一步都會降低 loss。
+
+說明重點
+
+這裡可以連結到線性代數課程中的：
+
+least squares
+normal equation
+linear system
+iterative optimization
+
+原本同時求 U 和 V 很困難。
+
+但固定其中一個矩陣後，另一個矩陣的求解就變成最小平方法問題。
