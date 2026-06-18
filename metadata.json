@@ -10,7 +10,7 @@
   "error_message": null,
   "user_prompt": "請以大學授課老師的親切口吻講解，偶爾穿插生活化的例子、打比方讓聽眾更容易理解；避免太多專有名詞堆砌，遇到術語請稍微解釋。\n\n【語氣提示詞】\n語氣自然、親切、節奏分明，重點前可稍作鋪陳，段落銜接流暢。",
   "created_at": "2026-05-16T18:20:11.568Z",
-  "updated_at": "2026-06-08T07:39:11.696Z",
+  "updated_at": "2026-06-17T23:31:06.032Z",
   "pages": [
     {
       "page_number": 1,
@@ -18,7 +18,10 @@
       "text": "pages/w0A8TPBzJb.text.txt",
       "script": "pages/w0A8TPBzJb.script.txt",
       "audio": "pages/w0A8TPBzJb.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_duration_seconds": 67.173625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 2,
@@ -26,7 +29,10 @@
       "text": "pages/GNHRe7winP.text.txt",
       "script": "pages/GNHRe7winP.script.txt",
       "audio": "pages/GNHRe7winP.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 85.693625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 3,
@@ -34,7 +40,10 @@
       "text": "pages/5vj0LwcZ-0.text.txt",
       "script": "pages/5vj0LwcZ-0.script.txt",
       "audio": "pages/5vj0LwcZ-0.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 78.013625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 4,
@@ -42,7 +51,10 @@
       "text": "pages/Y74Cy2kcOl.text.txt",
       "script": "pages/Y74Cy2kcOl.script.txt",
       "audio": "pages/Y74Cy2kcOl.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 63.093625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 5,
@@ -50,7 +62,10 @@
       "text": "pages/r0cCBebi8k.text.txt",
       "script": "pages/r0cCBebi8k.script.txt",
       "audio": "pages/r0cCBebi8k.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 45.333625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 6,
@@ -58,7 +73,10 @@
       "text": "pages/gF83VyKxQg.text.txt",
       "script": "pages/gF83VyKxQg.script.txt",
       "audio": "pages/gF83VyKxQg.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 59.053625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 7,
@@ -67,7 +85,9 @@
       "script": "pages/7p8irxQqzW.script.txt",
       "audio": "pages/7p8irxQqzW.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 84.493625
+      "audio_duration_seconds": 59.053625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 8,
@@ -75,7 +95,10 @@
       "text": "pages/N-XzwGwSen.text.txt",
       "script": "pages/N-XzwGwSen.script.txt",
       "audio": "pages/N-XzwGwSen.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 69.973625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 9,
@@ -83,7 +106,10 @@
       "text": "pages/6NU2oX1FRc.text.txt",
       "script": "pages/6NU2oX1FRc.script.txt",
       "audio": "pages/6NU2oX1FRc.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 72.453625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 10,
@@ -91,7 +117,10 @@
       "text": "pages/Y18uYHi0BP.text.txt",
       "script": "pages/Y18uYHi0BP.script.txt",
       "audio": "pages/Y18uYHi0BP.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 77.253625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 11,
@@ -99,7 +128,10 @@
       "text": "pages/1ij0r0X8SO.text.txt",
       "script": "pages/1ij0r0X8SO.script.txt",
       "audio": "pages/1ij0r0X8SO.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 49.973625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 12,
@@ -107,7 +139,10 @@
       "text": "pages/hSeG_KMsm2.text.txt",
       "script": "pages/hSeG_KMsm2.script.txt",
       "audio": "pages/hSeG_KMsm2.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 53.613625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 13,
@@ -116,7 +151,9 @@
       "script": "pages/neh0Lp0VYz.script.txt",
       "audio": "pages/neh0Lp0VYz.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 31.573625
+      "audio_duration_seconds": 42.173625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 14,
@@ -124,7 +161,10 @@
       "text": "pages/XdGxe23WyN.text.txt",
       "script": "pages/XdGxe23WyN.script.txt",
       "audio": "pages/XdGxe23WyN.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 58.973625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 15,
@@ -132,7 +172,10 @@
       "text": "pages/gMFjvOVPkH.text.txt",
       "script": "pages/gMFjvOVPkH.script.txt",
       "audio": "pages/gMFjvOVPkH.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 97.373625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 16,
@@ -140,7 +183,10 @@
       "text": "pages/-04u1CwTzF.text.txt",
       "script": "pages/-04u1CwTzF.script.txt",
       "audio": "pages/-04u1CwTzF.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 82.653625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 17,
@@ -148,7 +194,10 @@
       "text": "pages/POZr46fQAb.text.txt",
       "script": "pages/POZr46fQAb.script.txt",
       "audio": "pages/POZr46fQAb.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 37.693625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 18,
@@ -156,7 +205,10 @@
       "text": "pages/KS9quJ6pey.text.txt",
       "script": "pages/KS9quJ6pey.script.txt",
       "audio": "pages/KS9quJ6pey.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 55.093625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 19,
@@ -164,7 +216,10 @@
       "text": "pages/6KPmuQPYV9.text.txt",
       "script": "pages/6KPmuQPYV9.script.txt",
       "audio": "pages/6KPmuQPYV9.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 65.533625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 20,
@@ -172,7 +227,10 @@
       "text": "pages/2LLDui8nBs.text.txt",
       "script": "pages/2LLDui8nBs.script.txt",
       "audio": "pages/2LLDui8nBs.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 78.373625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 21,
@@ -180,7 +238,10 @@
       "text": "pages/CGtv-X3uz5.text.txt",
       "script": "pages/CGtv-X3uz5.script.txt",
       "audio": "pages/CGtv-X3uz5.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 47.053625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 22,
@@ -188,7 +249,10 @@
       "text": "pages/l--uhh9eQZ.text.txt",
       "script": "pages/l--uhh9eQZ.script.txt",
       "audio": "pages/l--uhh9eQZ.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 65.053625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 23,
@@ -197,7 +261,9 @@
       "script": "pages/B8wOizaCyK.script.txt",
       "audio": "pages/B8wOizaCyK.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 100.653625
+      "audio_duration_seconds": 56.333625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 24,
@@ -205,7 +271,10 @@
       "text": "pages/J3T84VM0W_.text.txt",
       "script": "pages/J3T84VM0W_.script.txt",
       "audio": "pages/J3T84VM0W_.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 82.173625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 25,
@@ -213,7 +282,10 @@
       "text": "pages/8esqQtyani.text.txt",
       "script": "pages/8esqQtyani.script.txt",
       "audio": "pages/8esqQtyani.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 91.973625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 26,
@@ -221,7 +293,10 @@
       "text": "pages/Y3Cv1aZdgg.text.txt",
       "script": "pages/Y3Cv1aZdgg.script.txt",
       "audio": "pages/Y3Cv1aZdgg.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 45.373625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 27,
@@ -229,7 +304,10 @@
       "text": "pages/dL0zg2g_Zt.text.txt",
       "script": "pages/dL0zg2g_Zt.script.txt",
       "audio": "pages/dL0zg2g_Zt.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 66.893625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 28,
@@ -237,7 +315,10 @@
       "text": "pages/KjgVTZ5bNi.text.txt",
       "script": "pages/KjgVTZ5bNi.script.txt",
       "audio": "pages/KjgVTZ5bNi.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 69.693625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 29,
@@ -245,7 +326,10 @@
       "text": "pages/nDR2aVh3sn.text.txt",
       "script": "pages/nDR2aVh3sn.script.txt",
       "audio": "pages/nDR2aVh3sn.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 57.533625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 30,
@@ -253,7 +337,10 @@
       "text": "pages/yMo8RZ5rTs.text.txt",
       "script": "pages/yMo8RZ5rTs.script.txt",
       "audio": "pages/yMo8RZ5rTs.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 65.133625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 31,
@@ -261,7 +348,10 @@
       "text": "pages/93aoUpeJ3z.text.txt",
       "script": "pages/93aoUpeJ3z.script.txt",
       "audio": "pages/93aoUpeJ3z.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 56.093625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 32,
@@ -269,7 +359,10 @@
       "text": "pages/66ht-ZXG25.text.txt",
       "script": "pages/66ht-ZXG25.script.txt",
       "audio": "pages/66ht-ZXG25.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 63.413625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 33,
@@ -278,7 +371,9 @@
       "script": "pages/N-APDaFvFj.script.txt",
       "audio": "pages/N-APDaFvFj.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 81.733625
+      "audio_duration_seconds": 53.573625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 34,
@@ -286,7 +381,10 @@
       "text": "pages/iO033KvI19.text.txt",
       "script": "pages/iO033KvI19.script.txt",
       "audio": "pages/iO033KvI19.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 68.813625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 35,
@@ -294,7 +392,10 @@
       "text": "pages/MWAGpuv0dY.text.txt",
       "script": "pages/MWAGpuv0dY.script.txt",
       "audio": "pages/MWAGpuv0dY.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 81.613625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 36,
@@ -302,7 +403,10 @@
       "text": "pages/nBvkVZhECW.text.txt",
       "script": "pages/nBvkVZhECW.script.txt",
       "audio": "pages/nBvkVZhECW.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 56.213625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 37,
@@ -310,7 +414,10 @@
       "text": "pages/_yYrKOpC3H.text.txt",
       "script": "pages/_yYrKOpC3H.script.txt",
       "audio": "pages/_yYrKOpC3H.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 65.293625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 38,
@@ -318,7 +425,10 @@
       "text": "pages/Zwq-tT5mlQ.text.txt",
       "script": "pages/Zwq-tT5mlQ.script.txt",
       "audio": "pages/Zwq-tT5mlQ.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 72.293625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 39,
@@ -326,7 +436,10 @@
       "text": "pages/-TWN4o2Z6_.text.txt",
       "script": "pages/-TWN4o2Z6_.script.txt",
       "audio": "pages/-TWN4o2Z6_.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 80.773625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 40,
@@ -334,7 +447,10 @@
       "text": "pages/4iYT7jpWY2.text.txt",
       "script": "pages/4iYT7jpWY2.script.txt",
       "audio": "pages/4iYT7jpWY2.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 65.773625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 41,
@@ -342,7 +458,10 @@
       "text": "pages/poiNB7yyI6.text.txt",
       "script": "pages/poiNB7yyI6.script.txt",
       "audio": "pages/poiNB7yyI6.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 52.093625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 42,
@@ -350,7 +469,10 @@
       "text": "pages/osir3zunPC.text.txt",
       "script": "pages/osir3zunPC.script.txt",
       "audio": "pages/osir3zunPC.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 54.173625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 43,
@@ -358,7 +480,10 @@
       "text": "pages/qLoi95kEuZ.text.txt",
       "script": "pages/qLoi95kEuZ.script.txt",
       "audio": "pages/qLoi95kEuZ.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 73.573625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 44,
@@ -367,7 +492,9 @@
       "script": "pages/zTZ8t38lzG.script.txt",
       "audio": "pages/zTZ8t38lzG.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 76.133625
+      "audio_duration_seconds": 49.253625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 45,
@@ -375,7 +502,10 @@
       "text": "pages/M_DaPkaxyn.text.txt",
       "script": "pages/M_DaPkaxyn.script.txt",
       "audio": "pages/M_DaPkaxyn.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 49.413625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 46,
@@ -383,7 +513,10 @@
       "text": "pages/6Pq0lr_BFv.text.txt",
       "script": "pages/6Pq0lr_BFv.script.txt",
       "audio": "pages/6Pq0lr_BFv.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 64.413625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 47,
@@ -391,7 +524,10 @@
       "text": "pages/x7N75Qn5B_.text.txt",
       "script": "pages/x7N75Qn5B_.script.txt",
       "audio": "pages/x7N75Qn5B_.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 51.453625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 48,
@@ -399,7 +535,10 @@
       "text": "pages/i2kFXz3KI2.text.txt",
       "script": "pages/i2kFXz3KI2.script.txt",
       "audio": "pages/i2kFXz3KI2.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 72.333625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 49,
@@ -407,7 +546,10 @@
       "text": "pages/P5lhKoVWDZ.text.txt",
       "script": "pages/P5lhKoVWDZ.script.txt",
       "audio": "pages/P5lhKoVWDZ.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 86.253625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 50,
@@ -415,7 +557,10 @@
       "text": "pages/5md3Qp9_c_.text.txt",
       "script": "pages/5md3Qp9_c_.script.txt",
       "audio": "pages/5md3Qp9_c_.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 46.173625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 51,
@@ -423,7 +568,10 @@
       "text": "pages/ykPiQo_kRf.text.txt",
       "script": "pages/ykPiQo_kRf.script.txt",
       "audio": "pages/ykPiQo_kRf.m4a",
-      "status": "audio_ready"
+      "status": "audio_ready",
+      "audio_duration_seconds": 75.973625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 52,
@@ -432,7 +580,9 @@
       "script": "pages/2_ZDgdL09U.script.txt",
       "audio": "pages/2_ZDgdL09U.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 90.973625
+      "audio_duration_seconds": 62.293625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 53,
@@ -441,7 +591,9 @@
       "script": "pages/6P9q261S0O.script.txt",
       "audio": "pages/6P9q261S0O.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 68.413625
+      "audio_duration_seconds": 54.093625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 54,
@@ -450,7 +602,9 @@
       "script": "pages/N1BDmNGt3r.script.txt",
       "audio": "pages/N1BDmNGt3r.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 113.293625
+      "audio_duration_seconds": 56.933625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 55,
@@ -459,7 +613,9 @@
       "script": "pages/JY4ACB9Lmd.script.txt",
       "audio": "pages/JY4ACB9Lmd.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 93.413625
+      "audio_duration_seconds": 61.693625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 56,
@@ -468,7 +624,9 @@
       "script": "pages/75NJbgzCQE.script.txt",
       "audio": "pages/75NJbgzCQE.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 64.893625
+      "audio_duration_seconds": 77.573625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 57,
@@ -477,7 +635,9 @@
       "script": "pages/yDXAirvFDt.script.txt",
       "audio": "pages/yDXAirvFDt.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 103.173625
+      "audio_duration_seconds": 54.813625,
+      "script_generated_at": "2026-06-11T10:59:08.245Z",
+      "audio_generated_at": "2026-06-11T11:18:12.526Z"
     },
     {
       "page_number": 58,
@@ -486,8 +646,9 @@
       "script": "pages/irVnAvao5e.script.txt",
       "audio": "pages/irVnAvao5e.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 67.013625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 66.413625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 59,
@@ -496,8 +657,9 @@
       "script": "pages/ABoxJmNZ96.script.txt",
       "audio": "pages/ABoxJmNZ96.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 74.093625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 46.533625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 60,
@@ -506,8 +668,9 @@
       "script": "pages/8SYvTBzRl3.script.txt",
       "audio": "pages/8SYvTBzRl3.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 94.293625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 50.813625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 61,
@@ -516,8 +679,9 @@
       "script": "pages/_bnZBzUG-d.script.txt",
       "audio": "pages/_bnZBzUG-d.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 91.133625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 67.253625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 62,
@@ -526,8 +690,9 @@
       "script": "pages/2ktlTp_f_8.script.txt",
       "audio": "pages/2ktlTp_f_8.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 85.613625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 69.853625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 63,
@@ -536,8 +701,9 @@
       "script": "pages/SyE8pMrmbN.script.txt",
       "audio": "pages/SyE8pMrmbN.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 58.613625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 63.053625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 64,
@@ -546,8 +712,9 @@
       "script": "pages/yu52PwsqBl.script.txt",
       "audio": "pages/yu52PwsqBl.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 109.293625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 64.133625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 65,
@@ -556,8 +723,9 @@
       "script": "pages/_8iRnwBOTk.script.txt",
       "audio": "pages/_8iRnwBOTk.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 66.693625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 50.093625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 66,
@@ -566,8 +734,9 @@
       "script": "pages/huE3M13ilp.script.txt",
       "audio": "pages/huE3M13ilp.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 84.093625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 75.413625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 67,
@@ -576,8 +745,9 @@
       "script": "pages/ICJii018xC.script.txt",
       "audio": "pages/ICJii018xC.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 131.653625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 66.333625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 68,
@@ -586,8 +756,9 @@
       "script": "pages/Qec_Q8hSMa.script.txt",
       "audio": "pages/Qec_Q8hSMa.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 75.373625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 48.493625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 69,
@@ -596,8 +767,9 @@
       "script": "pages/aaLtGshDtC.script.txt",
       "audio": "pages/aaLtGshDtC.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 65.053625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 73.533625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 70,
@@ -606,8 +778,9 @@
       "script": "pages/jGPmSjvIMq.script.txt",
       "audio": "pages/jGPmSjvIMq.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 74.533625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 71.493625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 71,
@@ -616,8 +789,9 @@
       "script": "pages/ei1xMSdX7n.script.txt",
       "audio": "pages/ei1xMSdX7n.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 90.013625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 73.133625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 72,
@@ -626,8 +800,9 @@
       "script": "pages/GlPnvk5kSz.script.txt",
       "audio": "pages/GlPnvk5kSz.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 75.813625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 59.213625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 73,
@@ -636,8 +811,9 @@
       "script": "pages/D5CVCy3EBe.script.txt",
       "audio": "pages/D5CVCy3EBe.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 85.893625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 81.733625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 74,
@@ -646,8 +822,9 @@
       "script": "pages/3hV0rw0rFZ.script.txt",
       "audio": "pages/3hV0rw0rFZ.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 71.773625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 41.333625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 75,
@@ -656,8 +833,9 @@
       "script": "pages/8LVTYAkLk7.script.txt",
       "audio": "pages/8LVTYAkLk7.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 79.693625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 57.733625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 76,
@@ -666,8 +844,9 @@
       "script": "pages/uQP9GyQq-A.script.txt",
       "audio": "pages/uQP9GyQq-A.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 82.213625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 72.413625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 77,
@@ -676,8 +855,9 @@
       "script": "pages/txH9qzX1mn.script.txt",
       "audio": "pages/txH9qzX1mn.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 98.533625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 61.253625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 78,
@@ -686,8 +866,9 @@
       "script": "pages/ixV30HcqS-.script.txt",
       "audio": "pages/ixV30HcqS-.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 95.893625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 41.973625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 79,
@@ -696,8 +877,9 @@
       "script": "pages/h91sxx8Nwc.script.txt",
       "audio": "pages/h91sxx8Nwc.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 81.573625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 61.173625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 80,
@@ -706,8 +888,9 @@
       "script": "pages/Xx7fpRFMUK.script.txt",
       "audio": "pages/Xx7fpRFMUK.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 101.893625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 52.613625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 81,
@@ -716,8 +899,9 @@
       "script": "pages/XSck3-qDqH.script.txt",
       "audio": "pages/XSck3-qDqH.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 67.893625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 89.653625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 82,
@@ -726,8 +910,9 @@
       "script": "pages/3uEHvFdaux.script.txt",
       "audio": "pages/3uEHvFdaux.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 54.933625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 74.333625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     },
     {
       "page_number": 83,
@@ -736,8 +921,9 @@
       "script": "pages/Pmz-P7ERDG.script.txt",
       "audio": "pages/Pmz-P7ERDG.m4a",
       "status": "audio_ready",
-      "audio_duration_seconds": 76.773625,
-      "audio_generated_at": "2026-06-06T17:31:13.362Z"
+      "audio_duration_seconds": 73.573625,
+      "audio_generated_at": "2026-06-11T11:18:12.526Z",
+      "script_generated_at": "2026-06-11T10:59:08.245Z"
     }
   ],
   "notes": "M2 complete: pages rendered + text extracted",
@@ -755,5 +941,6 @@
     "tts_chars_total": 40269
   },
   "category": "機器學習",
-  "total_audio_duration_seconds": 3063.238
+  "total_audio_duration_seconds": 5305.691,
+  "visibility": "public"
 }
